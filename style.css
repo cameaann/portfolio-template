@@ -65,7 +65,9 @@ li.menu_item a {
   font-weight: 500;
 }
 
-
+.mobile{
+  display: none;
+}
 
 /* li.menu_item a {
         color: #190482;
@@ -73,7 +75,7 @@ li.menu_item a {
   } */
 
 .main {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -103,9 +105,8 @@ h3 {
 }
 
 section, .section {
-  margin-top: 4rem;
-  margin-bottom: 5rem;
   padding-top: 4rem;
+  margin: 4rem auto 5rem auto;
 }
 
 .section__box{
@@ -153,7 +154,13 @@ a.btn {
 .skills {
   padding-bottom: 5rem;
   display: flex;
-  justify-content: space-evenly;
+  gap:2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.skills>:nth-child(even){
+  background-color: #e5e3e5;
 }
 .skill-card{
   display: flex;
@@ -194,7 +201,7 @@ div.level{
   width:13rem;
 }
 .level.javascript::after{
-  width:10rem;
+  width:13rem;
 }
 .level.react::after{
   width:8rem;
@@ -246,14 +253,27 @@ form {
 }
 
 @media only screen and (max-width: 600px) {
+  .main{
+    width: 90%;
+  }
   .projects {
     align-content: center;
     flex-direction: column;
   }
-  
+  .skills{
+    flex-direction: column;
+    align-items: center;
+    gap:3rem;
+  }
+  .mobile{
+    display: block;
+  }
   
 }
 @media only screen and (max-width: 768px) {
+  .main{
+    width: 90%;
+  }
   header{
     height: 30vh;
   }
@@ -342,12 +362,15 @@ form {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
   .portfolio-name {
     font-size: 2.2rem;
     margin-left: 2rem;
   }
   .menu {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+  h1{
+    font-size: 3rem;
   }
 }
