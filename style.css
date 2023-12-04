@@ -75,7 +75,7 @@ li.menu_item a {
   } */
 
 .main {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -252,33 +252,24 @@ form {
   margin: 2rem auto;
 }
 
-@media only screen and (max-width: 600px) {
+
+
+@media only screen and (max-width: 1025px) {
   .main{
     width: 90%;
   }
-  .projects {
-    align-content: center;
-    flex-direction: column;
-  }
-  .skills{
-    flex-direction: column;
-    align-items: center;
-    gap:3rem;
-  }
-  .mobile{
-    display: block;
-  }
-  
 }
-@media only screen and (max-width: 768px) {
+
+
+@media only screen and (max-width: 780px) {
   .main{
     width: 90%;
   }
   header{
-    height: 30vh;
+    height: 40vh;
   }
   h1{
-    font-size: 3.6rem;
+    font-size: 2.8rem;
     top: 40%;
     width: 100%;
   }
@@ -293,13 +284,10 @@ form {
     margin-left: 2rem;
 
   }
-  .menu {
-    flex-direction: column;
-    font-size: 1.8rem;
+  .menu{
+    font-size: 1.6rem;
   }
-  .menu_item {
-    display: none;
-  }
+
   .mobile i{
     display: block;
     font-size: 2rem;
@@ -323,6 +311,9 @@ form {
     cursor: pointer;
     font-size: 1.6rem;
   }
+  .section{
+    margin-top: 0;
+  }
   .section__box > p{
     display: flex;
     flex-direction: column;
@@ -334,6 +325,52 @@ form {
     align-items: center;
     align-content: center;
   }
+
+  .skill-card{
+    display: flex;
+    flex-direction: column;
+    width:10rem;
+    height: 10rem;
+    background-color: #f2eaf4;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill-card h3{
+    color:#1A082F
+  }
+  
+  span>i{
+    font-size: 3rem;
+    color:#1A082F;
+  }
+  
+  div.level{
+    position: relative;
+    display: block;
+    width:7rem;
+    height: 1rem;
+    background-color: #dfd6e2;
+  }
+  .level::after{
+    position: absolute;
+    height: 1rem;
+    content: "";
+    background-color: #e9831e;
+  }
+  .level.html::after{
+    width:6.5rem;
+  }
+  .level.css::after{
+    width:6.5rem;
+  }
+  .level.javascript::after{
+    width:6.5rem;
+  }
+  .level.react::after{
+    width:4rem;
+  }
+
 
   footer{
     padding: 2rem;
@@ -362,15 +399,46 @@ form {
   }
 }
 
-@media only screen and (min-width: 900px) {
+
+
+@media only screen and (max-width: 600px) {
+  .main{
+    width: 90%;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  .projects {
+    align-content: center;
+    flex-direction: column;
+  }
+  .skills{
+    flex-direction: column;
+    align-items: center;
+    gap:3rem;
+  }
+  .mobile{
+    display: block;
+  }
+  
+}
+
+@media only screen and (max-width: 480px) {
+  .menu_item {
+    display: none;
+  }
   .portfolio-name {
     font-size: 2.2rem;
     margin-left: 2rem;
   }
+  
   .menu {
+    flex-direction: column;
     font-size: 1.6rem;
   }
+ 
   h1{
     font-size: 3rem;
   }
 }
+
