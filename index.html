@@ -19,22 +19,23 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+
     <title>Portfolio</title>
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
+      <nav class="nav" >
         <div class="portfolio-name">Anna Shestakova</div>
-        <ul class="menu">
+        <span class="mobile" id="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+        <ul class="menu" id = "menu">
           <li class="menu_item"><a href="#projects">Projects</a></li>
           <li class="menu_item"><a href="#about">About me</a></li>
           <li class="menu_item"><a href="#skills">Skills</a></li>
           <li class="menu_item"><a href="#contact">Contact</a></li>
           <li class="menu_item"><a href="#more">More about BCH</a></li>
         </ul>
-        <span class="mobile">
-          <i class="fa-solid fa-bars"></i>
-        </span>
       </nav>
 
       <h1>Welcome to my portfolio</h1>
@@ -156,5 +157,6 @@
       </form>
       <div class="copyright">Copyright &#169; My Website 2023</div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
-:root{
-  --textColor:#ffffff;
+:root {
+  --textColor: #ffffff;
 }
 
 html {
@@ -25,13 +25,13 @@ header {
   background-size: cover;
   height: 70vh;
 }
-header::before{
+header::before {
   content: "";
   position: absolute;
   background-color: #180f14;
-  width:100%;
+  width: 100%;
   height: 100%;
-  opacity: .4;
+  opacity: 0.4;
   z-index: 2;
 }
 .nav {
@@ -65,14 +65,9 @@ li.menu_item a {
   font-weight: 500;
 }
 
-.mobile{
+.mobile {
   display: none;
 }
-
-/* li.menu_item a {
-        color: #190482;
-      
-  } */
 
 .main {
   width: 70%;
@@ -104,12 +99,13 @@ h3 {
   font-weight: 600;
 }
 
-section, .section {
+section,
+.section {
   padding-top: 4rem;
   margin: 4rem auto 5rem auto;
 }
 
-.section__box{
+.section__box {
   display: block;
 }
 
@@ -139,6 +135,7 @@ img.section__img {
   padding: 1rem 1rem 3rem 1rem;
   border: 1px solid #c2d9ff;
   border-radius: 1rem;
+  flex-basis: 1;
 }
 .project > img {
   width: 25rem;
@@ -152,62 +149,64 @@ a.btn {
   font-size: 1.6rem;
 }
 .skills {
+  /* flex-grow: 1; */
+  /* flex-basis: 20%; */
   padding-bottom: 5rem;
   display: flex;
-  gap:2rem;
+  gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
-
 }
-.skills>:nth-child(even){
+.skills > :nth-child(even) {
   background-color: #e5e3e5;
 }
-.skill-card{
+.skill-card {
   display: flex;
   flex-direction: column;
-  width:18rem;
+  width: 18rem;
   height: 18rem;
   background-color: #f2eaf4;
   padding: 1rem;
   align-items: center;
   justify-content: center;
+  flex-basis: 1;
 }
-.skill-card h3{
-  color:#1A082F
+.skill-card h3 {
+  color: #1a082f;
 }
 
-span>i{
+span > i {
   font-size: 6rem;
-  color:#1A082F;
+  color: #1a082f;
 }
 
-div.level{
+div.level {
   position: relative;
   display: block;
-  width:14rem;
+  width: 14rem;
   height: 2rem;
   background-color: #dfd6e2;
 }
-.level::after{
+.level::after {
   position: absolute;
   height: 2rem;
   content: "";
   background-color: #e9831e;
 }
-.level.html::after{
-  width:13rem;
+.level.html::after {
+  width: 13rem;
 }
-.level.css::after{
-  width:13rem;
+.level.css::after {
+  width: 13rem;
 }
-.level.javascript::after{
-  width:13rem;
+.level.javascript::after {
+  width: 13rem;
 }
-.level.react::after{
-  width:8rem;
+.level.react::after {
+  width: 8rem;
 }
 footer {
-  background-color: #1A082F;
+  background-color: #1a082f;
   padding: 5rem;
 }
 form > h2 {
@@ -252,43 +251,43 @@ form {
   margin: 2rem auto;
 }
 
-
-
 @media only screen and (max-width: 1025px) {
-  .main{
+  .main {
     width: 90%;
+  }
+  .menu{
+    display: flex;
   }
 }
 
-
 @media only screen and (max-width: 780px) {
-  .main{
+  .main {
     width: 90%;
   }
-  header{
+  header {
     height: 40vh;
   }
-  h1{
+  h1 {
     font-size: 2.8rem;
     top: 40%;
     width: 100%;
   }
-  h3{
+  h3 {
     font-size: 1.6rem;
   }
-  p{
+  p {
     font-size: 1.4rem;
   }
   .portfolio-name {
     font-size: 1.8rem;
     margin-left: 2rem;
-
   }
-  .menu{
+  .menu {
+    display: flex;
     font-size: 1.6rem;
   }
 
-  .mobile i{
+  .mobile i {
     display: block;
     font-size: 2rem;
     color: var(--textColor);
@@ -311,68 +310,67 @@ form {
     cursor: pointer;
     font-size: 1.6rem;
   }
-  .section{
+  .section {
     margin-top: 0;
   }
-  .section__box > p{
+  .section__box > p {
     display: flex;
     flex-direction: column;
   }
-  p>.section__img--left, 
-  p>.section__img--right{
+  p > .section__img--left,
+  p > .section__img--right {
     margin: 0;
     margin-bottom: 5rem;
     align-items: center;
     align-content: center;
   }
 
-  .skill-card{
+  .skill-card {
     display: flex;
-    flex-direction: column;
-    width:10rem;
+    flex-grow: 1;
+    width: 10rem;
     height: 10rem;
     background-color: #f2eaf4;
     padding: 1rem;
     align-items: center;
     justify-content: center;
   }
-  .skill-card h3{
-    color:#1A082F
+  .skill-card h3 {
+    color: #1a082f;
   }
-  
-  span>i{
+
+  span > i {
     font-size: 3rem;
-    color:#1A082F;
+    color: #1a082f;
   }
-  
-  div.level{
+
+  div.level {
     position: relative;
     display: block;
-    width:7rem;
+    width: 7rem;
     height: 1rem;
     background-color: #dfd6e2;
   }
-  .level::after{
+  .level::after {
     position: absolute;
     height: 1rem;
     content: "";
     background-color: #e9831e;
   }
-  .level.html::after{
-    width:6.5rem;
+  .level.html::after {
+    width: 6.5rem;
   }
-  .level.css::after{
-    width:6.5rem;
+  .level.css::after {
+    width: 6.5rem;
   }
-  .level.javascript::after{
-    width:6.5rem;
+  .level.javascript::after {
+    width: 6.5rem;
   }
-  .level.react::after{
-    width:4rem;
+  .level.react::after {
+    width: 4rem;
   }
 
-
-  footer{
+  footer {
     padding: 2rem;
   }
   form {
@@ -386,7 +384,7 @@ form {
   }
   .form__field {
     flex-direction: column;
-    gap:1rem;
+    gap: 1rem;
   }
   .form__input {
     width: 25rem;
@@ -399,46 +397,76 @@ form {
   }
 }
 
-
-
 @media only screen and (max-width: 600px) {
-  .main{
+  .main {
     width: 90%;
   }
-  h1{
+ .menu{
+  display: flex;
+ }
+
+  h1 {
     font-size: 2rem;
   }
   .projects {
     align-content: center;
     flex-direction: column;
   }
-  .skills{
+  /* .skills {
     flex-direction: column;
     align-items: center;
-    gap:3rem;
-  }
-  .mobile{
+    gap: 3rem;
+  } */
+  .mobile {
     display: block;
   }
-  
 }
 
 @media only screen and (max-width: 480px) {
-  .menu_item {
+  /* .menu_item {
     display: none;
-  }
+  } */
   .portfolio-name {
     font-size: 2.2rem;
     margin-left: 2rem;
   }
-  
+  .menu {
+    display: none;
+  }
   .menu {
     flex-direction: column;
     font-size: 1.6rem;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    background-color: #7f858f;
+    width: 100%;
+    z-index: 4;
   }
- 
-  h1{
+
+  .menu_item {
+    padding: 1.5rem;
+    border: 1px solid #ffffff;
+  }
+  li.menu_item > a{
+    display: block;
+    width: 100%;
+  }
+
+  h1 {
+    z-index: 2;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  h1 {
     font-size: 3rem;
   }
 }
 
+.show{
+  display: flex;
+}
