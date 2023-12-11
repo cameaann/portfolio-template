@@ -149,8 +149,6 @@ a.btn {
   font-size: 1.6rem;
 }
 .skills {
-  /* flex-grow: 1; */
-  /* flex-basis: 20%; */
   padding-bottom: 5rem;
   display: flex;
   gap: 2rem;
@@ -169,7 +167,7 @@ a.btn {
   padding: 1rem;
   align-items: center;
   justify-content: center;
-  flex-basis: 1;
+  
 }
 .skill-card h3 {
   color: #1a082f;
@@ -275,9 +273,7 @@ form {
   h3 {
     font-size: 1.6rem;
   }
-  p {
-    font-size: 1.4rem;
-  }
+ 
   .portfolio-name {
     font-size: 1.8rem;
     margin-left: 2rem;
@@ -313,10 +309,7 @@ form {
   .section {
     margin-top: 0;
   }
-  .section__box > p {
-    display: flex;
-    flex-direction: column;
-  }
+  
   p > .section__img--left,
   p > .section__img--right {
     margin: 0;
@@ -326,18 +319,19 @@ form {
   }
 
   .skill-card {
-    display: flex;
-    flex-grow: 1;
+    /* display: flex;
     width: 10rem;
     height: 10rem;
     background-color: #f2eaf4;
     padding: 1rem;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    flex-basis: 30%;
+    flex-grow: 1;
   }
-  .skill-card h3 {
+  /* .skill-card h3 {
     color: #1a082f;
-  }
+  } */
 
   span > i {
     font-size: 3rem;
@@ -379,15 +373,15 @@ form {
     flex-direction: column;
     color: #ffffff;
     font-size: 1.6rem;
-    /* margin: 0 auto; */
     align-items: center;
   }
   .form__field {
     flex-direction: column;
+    width:60%;
     gap: 1rem;
   }
   .form__input {
-    width: 25rem;
+    width: 100%;
     border-radius: 4px;
     padding: 1rem;
   }
@@ -412,20 +406,36 @@ form {
     align-content: center;
     flex-direction: column;
   }
-  /* .skills {
+  .section__box {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-  } */
+    gap:4rem;
+  }
+  .skills{
+    flex-direction: row;
+  }
+  img.section__img {
+    width:100%;
+  }
+  .form__field {
+    flex-direction: column;
+    width:80%;
+    gap: 1rem;
+  }
+  .form__input {
+    width: 100%;
+    border-radius: 4px;
+    padding: 1rem;
+  }
   .mobile {
     display: block;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  /* .menu_item {
-    display: none;
-  } */
+  .header{
+    height: 20vh;
+  }
   .portfolio-name {
     font-size: 2.2rem;
     margin-left: 2rem;
@@ -457,13 +467,19 @@ form {
     z-index: 2;
   }
 
+  .section__box {
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+  }
+
   .skills {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
