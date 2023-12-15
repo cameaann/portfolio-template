@@ -193,16 +193,16 @@ div.level {
   background-color: #e9831e;
 }
 .level.html::after {
-  width: 13rem;
+  width: 80%;
 }
 .level.css::after {
-  width: 13rem;
+  width: 80%;
 }
 .level.javascript::after {
-  width: 13rem;
+  width: 80%;
 }
 .level.react::after {
-  width: 8rem;
+  width: 60%;
 }
 footer {
   background-color: #1a082f;
