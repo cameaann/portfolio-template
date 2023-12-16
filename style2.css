@@ -30,7 +30,7 @@ a {
 .header {
   position: relative;
   height: 60vh;
-  background-image: url("/assets/images/main-img.jpeg");
+  background-image: url("assets/images/main-img.jpeg");
   background-size: cover;
   justify-content: center;
   /* background-attachment: fixed; */
