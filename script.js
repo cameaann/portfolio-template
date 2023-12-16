@@ -1,13 +1,10 @@
-let menuBtn = document.getElementById("menu-btn");
-if (menuBtn) {
-  menuBtn.addEventListener("click", toggleMenu);
-}
+// let menuBtn = document.getElementById("menu-btn");
 
-function toggleMenu() {
-  let menu = document.getElementById("menu");
-  if(menu.classList.contains('show')){
-    menu.classList.remove("show");
-  }else{
-    menu.classList.add('show');
-  }
-}
+document.getElementById('menu-btn').addEventListener('click', function() {
+  const menu = document.getElementById('menu');
+  let closebutton = document.getElementById("closebutton");
+  let openbutton = document.getElementById("openbutton");
+  closebutton.classList.toggle("hide");
+  openbutton.classList.toggle("hide");
+  menu.classList.toggle('show');
+});
