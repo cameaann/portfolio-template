@@ -292,9 +292,7 @@ i.hide {
 /* Larger screens - desktops and laptops */
 @media only screen and (min-width: 1441px) {
   /* Styles for screens 1200 pixels and wider */
-  /* .header {
-    height: vh;
-  } */
+
   .portfolio-name {
     flex-grow: 3;
     text-align: justify;
@@ -304,10 +302,7 @@ i.hide {
   .main {
     max-width: 70%;
   }
-  /* .skills {
-    flex-wrap: nowrap;
-  } */
-  
+
 }
 
 /* Medium screens - tablets and smaller desktops */
@@ -320,7 +315,6 @@ i.hide {
   .portfolio-name {
     flex-grow: 1;
     text-align: justify;
-    /* margin-left: 20rem; */
   }
   .main {
     width: 90%;
@@ -402,12 +396,13 @@ i.hide {
   .header {
     height: 20vh;
   }
-  nav {
-    /* flex-direction: column; */
-  }
   .portfolio-name {
     flex-grow: 8;
     text-align: justify;
+    font-size: 2rem;
+  }
+  .welcome-text{
+    font-size: 3rem;
   }
   .menu {
     position: absolute;
@@ -495,7 +490,7 @@ i.hide {
 
   }
   .welcome-text{
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .projects {
     flex-direction: column;
