@@ -163,7 +163,7 @@ a:hover {
   display: flex;
   gap: 3rem;
   margin-block-end: 5rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .skills > * {
@@ -300,12 +300,14 @@ i.hide {
     text-align: justify;
     margin-left: 20rem;
   }
+ 
   .main {
     max-width: 70%;
   }
-  .skills {
+  /* .skills {
     flex-wrap: nowrap;
-  }
+  } */
+  
 }
 
 /* Medium screens - tablets and smaller desktops */
@@ -314,6 +316,11 @@ i.hide {
   /* Styles for screens between 992 and 1199 pixels wide */
   .header {
     height: 35vh;
+  }
+  .portfolio-name {
+    flex-grow: 1;
+    text-align: justify;
+    /* margin-left: 20rem; */
   }
   .main {
     width: 90%;
@@ -324,6 +331,10 @@ i.hide {
   .welcome-text {
     font-size: 4.2rem;
   }
+  .skills {
+    flex-wrap: wrap;
+  }
+
   .skill-card {
     height: 16rem;
   }
@@ -396,6 +407,7 @@ i.hide {
   }
   .portfolio-name {
     flex-grow: 8;
+    text-align: justify;
   }
   .menu {
     position: absolute;
@@ -449,6 +461,9 @@ i.hide {
     float: none;
     margin-inline-start: 0;
   }
+  .skills {
+    flex-wrap: wrap;
+  }
 
   .footer {
     padding: 2rem;
@@ -473,6 +488,11 @@ i.hide {
 @media only screen and (max-width: 426px) {
   .menu {
     top: 8rem;
+  }
+  .portfolio-name{
+    flex-grow: 6;
+    text-align: justify;
+
   }
   .welcome-text{
     font-size: 3rem;
