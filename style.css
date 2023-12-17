@@ -458,7 +458,7 @@ i.hide {
 }
 @media only screen and (max-width: 426px) {
 .header{
-    height: 15vh;
+    height: 20vh;
 }
   .nav{
     padding: 0rem;
@@ -478,14 +478,17 @@ i.hide {
     margin-block-end: 0;
     margin-inline-end: 0;
     flex-grow: 6;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 
   }
   .mobile > i {
     font-size: 2.5rem;
   }
-  .welcome-text{
+  h1.welcome-text{
     font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
   }
   .projects {
     flex-direction: column;
