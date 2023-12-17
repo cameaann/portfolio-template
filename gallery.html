@@ -17,7 +17,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-grid.css" />
     <title>Grid Task</title>
   </head>
@@ -27,50 +26,51 @@
       <nav class="nav" >
         <div class="portfolio-name">Anna Shestakova</div>
         <span class="mobile" id="menu-btn">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" id="openbutton"></i>
+          <i class="fa-solid fa-xmark hide" id="closebutton"></i>
         </span>
-        <ul class="menu" id = "menu">
-          <li class="menu_item"><a href="#projects">Projects</a></li>
-          <li class="menu_item"><a href="#about">About me</a></li>
-          <li class="menu_item"><a href="#skills">Skills</a></li>
+        <ul class="menu hide" id = "menu">
+          <li class="menu_item"><a href="index.html#projects">Projects</a></li>
+          <li class="menu_item"><a href="index.html#about">About me</a></li>
+          <li class="menu_item"><a href="index.html#skills">Skills</a></li>
           <li class="menu_item"><a href="#contact">Contact</a></li>
-          <li class="menu_item"><a href="#more">More about BCH</a></li>
+          <li class="menu_item"><a href="index.html#header">More about BCH</a></li>
         </ul>
       </nav>
     </header>
-    <div class="grid-container">
+    <main class="gallery main">
       <figure class="item item-1">
-        <img src="./assets/images/image6.jpg" alt="">
+        <img class="gallery__img" src="./assets/images/image6.jpg" alt="">
       </figure>
       <figure class="item item-2">
-        <img src="./assets/images/image7.jpg" alt="">
+        <img class="gallery__img" src="./assets/images/image7.jpg" alt="">
       </figure>
-      <figure class="item item-3">
-        <img src="./assets/images/image8.jpg" alt="">
+      <figure  class="item item-3">
+        <img class="gallery__img" src="./assets/images/image8.jpg" alt="">
       </figure>
       <figure class="item item-4">
-        <img src="./assets/images/image9.jpg" alt="">
+        <img class="gallery__img" src="./assets/images/image9.jpg" alt="">
       </figure>
       <figure class="item item-5">
-        <img src="./assets/images/image10.jpg" alt="">
+        <img class="gallery__img" src="./assets/images/image10.jpg" alt="">
       </figure>
       <figure class="item item-6">
-        <img src="./assets/images/image11.jpg" alt="">
+        <img class="gallery__img" src="./assets/images/image11.jpg" alt="">
       </figure>
       <figure class="item item-7">
-        <img src="./assets/images/image12.jpg" alt="">
+        <img class="gallery__img" src="./assets/images/image12.jpg" alt="">
       </figure>
       <figure class="item item-8">
-        <img src="./assets/images/image13.jpg" alt="">
+        <img class="gallery__img" src="./assets/images/image13.jpg" alt="">
       </figure>
       <figure class="item item-9">
-        <img src="./assets/images/image14.jpg" alt="">
+        <img class="gallery__img" src="./assets/images/image14.jpg" alt="">
       </figure>
-      <figure class="item item-11">
-        <img src="./assets/images/image16.jpg" alt="">
+      <figure class="item item-10">
+        <img class="gallery__img" src="./assets/images/image16.jpg" alt="">
       </figure>    
-    </div>
-      <footer>
+    </main>
+    <footer class="footer">
       <form action="" id="contact">
         <h2 class="form__title">Contact me</h2>
         <div class="form__field">
@@ -102,7 +102,7 @@
             id="message"
           ></textarea>
         </div>
-        <button class="form__button" type="submit" value="submit">
+        <button class="btn form__button" type="submit" value="submit">
           Send message
         </button>
       </form>
