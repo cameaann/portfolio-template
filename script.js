@@ -6,5 +6,6 @@ document.getElementById('menu-btn').addEventListener('click', function() {
   let openbutton = document.getElementById("openbutton");
   closebutton.classList.toggle("hide");
   openbutton.classList.toggle("hide");
+  menu.classList.remove("hide");
   menu.classList.toggle('show');
 });
