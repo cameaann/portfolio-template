@@ -243,9 +243,6 @@ i.hide {
   .portfolio-name {
     flex-grow: 3;
   }
-  .menu{
-    flex-basis: 40%;
-  }
 
   .main {
     max-width: 60%;
