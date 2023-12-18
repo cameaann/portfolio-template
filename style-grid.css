@@ -358,6 +358,7 @@ i.hide {
     top: 10rem;
     right: -100%;
     width: 100%;
+    align-items: flex-start;
   }
 
   .menu.show {
@@ -369,9 +370,7 @@ i.hide {
     animation: moveRight 0.3s ease-in;
     animation-fill-mode: forwards;
   }
-  .menu > li > a {
-    color: var(--navcolor);
-  }
+
   .menu.hide {
     display: none;
   }
@@ -386,8 +385,10 @@ i.hide {
   .menu > li {
     padding: 1.5rem;
     border: 1px solid var(--mainheading);
+    width: 100%;
   }
   .menu > li > a {
+    color: var(--navcolor);
     display: block;
     width: 100%;
   }
