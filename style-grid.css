@@ -242,7 +242,9 @@ i.hide {
  
   .portfolio-name {
     flex-grow: 3;
-    margin-left: 20rem;
+  }
+  .menu{
+    flex-basis: 40%;
   }
 
   .main {
