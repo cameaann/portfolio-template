@@ -8,7 +8,7 @@
   --sectioncolor: #d9e2de;
   --accentcolor: #e9831e;
   --lighttextcolor: #ffffff;
-  --footerbgcolor: #0b3856;
+  --footerbgcolor: #151543;
   --hover-brightness: 1.2;
 }
 
@@ -29,13 +29,15 @@ a {
 }
 .header {
   background-color: var(--lighttextcolor);
-  height: 8vh;
+  height: 10vh;
 }
 
 .mobile {
   display: none;
 }
-
+h1{
+  font-size: 3.6rem;
+}
 h2 {
   font-size: 2.8rem;
   color: var(--sectionheading);
@@ -235,7 +237,7 @@ i.hide {
 @media only screen and (min-width: 1441px) {
   /* Styles for screens 1200 pixels and wider */
   .header {
-    height: 7vh;
+    height: 10vh;
   }
  
   .portfolio-name {
@@ -256,7 +258,7 @@ i.hide {
 @media only screen and (max-width: 1025px) and (min-width: 769px) {
   /* Styles for screens between 769 and 1025 pixels wide */
   .header {
-    height: 5vh;
+    height: 10vh;
   }
   .menu {
     justify-content: space-between;
@@ -278,8 +280,14 @@ i.hide {
   .welcome-text {
     font-size: 3rem;
   }
+  h1{
+    font-size: 2.8rem;
+  }
   h2 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
+  }
+  h3{
+    font-size: 2rem;
   }
   .main {
     width: 100%;
@@ -306,7 +314,16 @@ i.hide {
 @media only screen and (max-width: 768px) {
   /* Styles for screens 767 pixels and narrower */
   .header {
-    height: 5vh;
+    height: 10vh;
+  }
+  h1{
+    font-size: 2.8rem;
+  }
+  h2{
+    font-size: 2.4rem;
+  }
+  h3{
+    font-size: 2rem;
   }
   .portfolio-name {
     flex-grow: 8;
@@ -318,7 +335,7 @@ i.hide {
   }
 
   .main {
-    width: 100%;
+    width: 90%;
   }
   .menu {
     position: absolute;
@@ -453,7 +470,7 @@ i.hide {
 }
 @media only screen and (max-width: 426px) {
   .header {
-    height: 5vh;
+    height: 10vh;
   }
   .nav {
     padding: 2rem;
