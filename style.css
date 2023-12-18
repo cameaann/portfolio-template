@@ -499,7 +499,7 @@ i.hide {
     margin-inline-end: 0;
     flex-grow: 6;
     font-size: 1.6rem;
-
+    font-weight: bold;
   }
   .mobile{
     flex-grow: 1;
