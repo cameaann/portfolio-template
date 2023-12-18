@@ -56,33 +56,40 @@ label {
 a:hover {
   cursor: pointer;
 }
+
 .nav {
-  width: -webkit-fill-available;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
-  z-index: 4;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
 }
-.nav > * {
-  margin-top: 2rem;
-  flex: 1 2 50%;
-}
+
 .portfolio-name {
+  margin: 0;
+  flex-grow: 1;
   font-size: 3.6rem;
-  flex-grow: 1.5;
-  text-align: center;
   color: var(--sectionheading);
 }
+
 .menu {
+  list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
+.menu_item{
+  margin: 0;
+  padding: 0 10px; 
+}
+
 .menu > * {
   font-size: 2rem;
   text-transform: uppercase;
 }
-.menu:last-child {
-  flex-grow: 2;
-}
+
 .menu > li > a {
   text-decoration: none;
   color: var(--footerbgcolor);
@@ -239,6 +246,10 @@ i.hide {
   .header {
     height: 10vh;
   }
+
+  .nav{
+    width: 70%;
+  }
  
   .portfolio-name {
     flex-grow: 3;
@@ -258,6 +269,9 @@ i.hide {
   /* Styles for screens between 769 and 1025 pixels wide */
   .header {
     height: 10vh;
+  }
+  .nav{
+    width: 100%;
   }
   .menu {
     justify-content: space-between;
