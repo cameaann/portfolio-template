@@ -340,9 +340,6 @@ i.hide {
 /* Small screens - tablets and large phones */
 @media only screen and (max-width: 1025px) and (min-width: 769px) {
   /* Styles for screens between 769 and 1025 pixels wide */
-  .header {
-    /* height: 60vh; */
-  }
   .hero-banner {
     height: 60vh;
   }
@@ -399,9 +396,6 @@ i.hide {
 /* Extra small screens - phones */
 @media only screen and (max-width: 768px) {
   /* Styles for screens 767 pixels and narrower */
-  .header {
-    /* height: 50vh; */
-  }
   .hero-banner {
     height: 50vh;
   }
@@ -506,9 +500,6 @@ i.hide {
   }
 }
 @media only screen and (max-width: 426px) {
-  .header {
-    /* height: 20vh; */
-  }
   .hero-banner {
     height: 20vh;
   }
